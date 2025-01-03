@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="Shortcut icon" href="favicon.png" type="img/png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Tushar's ShortCV</title>
-  </head>
-  <body>
+</head>
+<body>
     <!-- Navbar -->
     <nav class="navbar">
-      <!-- Hamburger Menu -->
-      <div class="hamburger-menu" id="hamburger-menu">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
+        <!-- Hamburger Menu -->
+        <div class="navbar-toggle" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
 
-      <!-- Navbar Links -->
-      <ul class="navbar-menu" id="navbar-menu">
-        <li><a href="about.html" target="_blank">About Me</a></li>
-        <!-- About Me opens in new tab -->
-        <li><a href="skills.html" target="_blank">Skills</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="cv.html" target="_blank">CV</a></li>
-        <li><a href="contact.html" target="_blank">Contact</a></li>
-      </ul>
+        <!-- Navbar Links -->
+        <ul class="navbar-menu" id="navbar-menu">
+            <li><a href="about.html" target="_blank">About Me</a></li>
+            <li><a href="skills.html" target="_blank">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="cv.html" target="_blank">CV</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
     </nav>
 
     <!-- Home Section -->
     <div id="home">
-      <div class="portfolio-container">
-        <div class="profile-section">
-          <img src="photo.jpg" alt="Profile Picture" class="profile-pic" />
-          <h1>Tushar Suthar</h1>
-          <p>Software Engineer || Information Technology</p>
-          <div class="social-links">
-            <a href="https://www.instagram.com/suthar_tushar_108/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/tushar-suthar-6a5b5829b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
-          </div>
+        <div class="portfolio-container">
+            <div class="profile-section">
+                <img src="photo.jpg" alt="Profile Picture" class="profile-pic" />
+                <h1>Tushar Suthar</h1>
+                <p>Software Engineer || Information Technology</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/suthar_tushar_108/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/tushar-suthar-6a5b5829b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
+
+    <script>
+        // JavaScript to toggle the navbar menu
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navbarMenu = document.getElementById('navbar-menu');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+    </script>
+</body>
 </html>
