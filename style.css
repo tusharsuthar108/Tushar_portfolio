@@ -1,0 +1,162 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #f8f3eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* The hamburger menu toggle */
+.navbar-toggle {
+    display: none; /* Initially hide the hamburger menu on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-toggle .bar {
+    width: 20px;
+    height: 2px;
+    margin: 2px;
+    background-color: #333;
+}
+
+/* Navbar menu */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #007acc;
+}
+
+/* Sticky Navbar for Scroll */
+body {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Hide navbar links by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: #f8f3eb;
+        padding: 10px 0;
+        position: absolute;
+        top: 60px; /* Position the menu below the navbar */
+        left: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Display menu when it is active */
+    }
+
+    .navbar-toggle {
+        display: flex; /* Show hamburger icon on small screens */
+    }
+
+    .navbar-menu li {
+        margin: 15px 0;
+        text-align: center;
+    }
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f3eb;
+    color: #333;
+}
+
+/* Portfolio Container */
+.portfolio-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Profile Section */
+.profile-section {
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.content-link:hover {
+    color: #007acc;
+}
